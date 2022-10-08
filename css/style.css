@@ -1,0 +1,138 @@
+@import "style-navbar.css";
+@import "style-images.css";
+@import "style-footer.css";
+@import "style-form.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+/*BODY*/
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #dbe2ef;
+    /* Enleve l'espace entre le body et l'exterieur de la page */
+    margin: 0;
+    color: #112D4E;
+}
+
+.section_image>section {
+    padding: 50px;
+}
+
+.section_image>section p {
+    padding: 25px;
+}
+
+/* Bold pour les tableaux dans Education et Carriere */
+.table_section_bold {
+    font-weight: bold;
+    font-size: larger;
+    font-size: 15pt;
+}
+
+/* Italic pour les tableaux dans Education et Carriere */
+.table_section_italic {
+    font-style: italic;
+    font-size: 15pt;
+}
+
+section,
+header {
+    text-align: center;
+}
+
+header {
+    padding: 50px;
+}
+
+p {
+    width: 75%;
+    margin: auto;
+    font-size: 15pt;
+    /* padding: 50px; */
+}
+
+.aside>p {
+    padding: 50px;
+}
+
+.conteneur-education {
+    margin: 15px;
+}
+
+.ligne-education {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.colonne-education {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.aside,
+.carriere-tableau-1,
+.carriere-tableau-2,
+.carriere-tableau-3,
+table {
+    padding: 50px;
+    border-spacing: 0;
+}
+
+@media screen and (min-width:800px) {
+    .aside {
+        border-right: solid;
+        border-color: white;
+    }
+}
+
+.aside {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.carriere-tableau-1 {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.carriere-tableau-2 {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.carriere-tableau-3 {
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+@media screen and (min-width:600px) {
+    .colonne-education {
+        flex: 1
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .parent {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+}

@@ -1,0 +1,75 @@
+.image_profil {
+    /* Settings d'image de profil*/
+    padding: 50px;
+    /*Dimensions des images*/
+    height: 600px;
+    width: 600px;
+    /*Met un cercle autour des images*/
+    border-radius: 50%;
+    /*Permet de crop les images aux dimensions*/
+    object-fit: cover;
+    border: solid;
+    color: #f9f7f7;
+}
+
+.image_education {
+    /* Settings d'image de profil*/
+    padding: 50px;
+    /*Met un cercle autour des images*/
+    border-radius: 50%;
+    /*Dimensions des images*/
+    height: 400px;
+    width: 400px;
+    /*Permet de crop les images aux dimensions*/
+    object-fit: fill;
+    border: solid;
+    color: #f9f7f7;
+}
+
+.image_realisation {
+    /* Settings d'image de profil*/
+    padding: 50px;
+    /*Met un cercle autour des images*/
+    border-radius: 50%;
+    /*Dimensions des images*/
+    height: 400px;
+    width: 400px;
+    /*Permet de crop les images aux dimensions*/
+    object-fit: cover;
+    border: solid;
+    color: #f9f7f7;
+}
+
+.section_image {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .image_profil,
+    .image_realisation {
+        /* Settings d'image de profil*/
+        /*Dimensions des images*/
+        height: 450px;
+        width: 450px;
+    }
+
+
+    .image_education {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .image_profil,
+    .image_education,
+    .image_realisation {
+        /*Dimensions des images*/
+        height: 200px;
+        width: 200px;
+        /*Met un cercle autour des images*/
+    }
+}
